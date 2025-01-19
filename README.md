@@ -66,21 +66,6 @@ void loop() {
   - Step-up ratio ≈ 18.33:1 (220V/12V)
   - Leakage inductance compensation through capacitive filtering
 
-### Performance Metrics
-
-1. **Efficiency Analysis**
-   - Theoretical maximum: η = P_out/P_in * 100%
-   - Major loss components:
-     - Switching losses: ~2-5%
-     - Copper losses: ~3-7%
-     - Core losses: ~2-4%
-   - Expected overall efficiency: 75-85%
-
-2. **Output Characteristics**
-   - Voltage regulation: ±5%
-   - Frequency stability: ±0.1%
-   - THD (Total Harmonic Distortion): <5%
-
 ## Safety Considerations
 
 ### High Voltage Safety
@@ -93,30 +78,6 @@ void loop() {
    - Over-current protection threshold: 120% of rated current
    - Thermal shutdown temperature: 85°C
    - Short-circuit protection through current sensing
-
-## Implementation Guidelines
-
-### Critical Parameters
-1. **Heat Management**
-   - Maximum junction temperature (Tj) for transistors: 150°C
-   - Thermal resistance calculation: θja = (Tj - Ta)/P_d
-   - Required heatsink thermal resistance: θhs = θja - θjc - θcs
-
-2. **EMI Considerations**
-   - Common-mode noise suppression
-   - Differential-mode filtering
-   - PCB layout guidelines for EMI reduction
-
-### Optimization Techniques
-1. **Switching Optimization**
-   - Snubber network design
-   - Gate drive considerations
-   - Dead-time optimization
-
-2. **Feedback Implementation**
-   - Voltage sensing ratio: 100:1
-   - Current sensing threshold: 2A
-   - Control loop bandwidth: 1kHz
 
 ## Future Enhancements
 
